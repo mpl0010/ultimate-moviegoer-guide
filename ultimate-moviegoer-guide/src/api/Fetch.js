@@ -8,9 +8,9 @@ I don't see fetch as a component, more-so an action that a component my take.
 const baseUrl = 'https://api.themoviedb.org/3/';
 const apiKey = 'api_key=9fb5d4f3d51341be07d30d72bcd86ade';
 
-const fetchFromAPI = async () => {
+const fetchFromAPI = async (filter, page) => {
 	// We want to use our constructed url to fetch the data needed.
-	const response = await fetch(`${baseUrl}movie/now_playing?${apiKey}`);
+	const response = await fetch(`${baseUrl}movie/${filter}?${apiKey}&page=${page}`);
 	
 	// If the response isn't ok, we throw an error with the status.
 	if (!response.ok) {

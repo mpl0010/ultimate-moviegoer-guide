@@ -1,23 +1,20 @@
 import './index.css';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import fetchFromAPI from './api/Fetch'
 import Header from './components/Header'
 import MovieList from './components/MovieList'
 
 function App() {
-  const [movies, setMovies] = useState([
-    {
-      id: 1,
-      title: 'Mortal Combat',
-    },
-    {
-      id: 2,
-      title: 'Breach',
-    },
-    {
-      id: 3,
-      title: 'Harry Potter',
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const dataFromAPI = await fetchFromAPI();
+      console.log(dataFromAPI);
     }
-  ])
+    
+    getData()
+  }, [])
 
   return (
     <div className="container">

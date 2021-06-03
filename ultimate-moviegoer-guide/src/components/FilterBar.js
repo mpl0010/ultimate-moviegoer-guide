@@ -22,8 +22,8 @@ const FilterBar = ({filter, setFilter, setPage}) => {
 	return(
 		<div className='filterBar'>
 			<button className='nowPlaying' onClick={onClickNowPlaying}>Now Playing</button>
-			<button className='Popular' onClick={onClickPopular}>Popular</button>
-			<button className='Top Rated' onClick={onClickTopRated}>Top Rated</button>
+			<button className='popular' onClick={onClickPopular}>Popular</button>
+			<button className='topRated' onClick={onClickTopRated}>Top Rated</button>
 		</div>
 	)
 }

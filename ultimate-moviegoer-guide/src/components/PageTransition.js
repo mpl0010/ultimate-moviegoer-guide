@@ -6,12 +6,14 @@ between the movie list.
 import PropTypes from 'prop-types'
 
 const PageTransition = ({page, setPage, totalPages}) => {
+	// If we pass in the page, we'd be using the state of page when its rendered.
+	// We want to create a function that passes in the previous page count that was used so that we have the correct page.
 	const onClickNextPage = () => {
-		setPage(page + 1);
+		setPage(prevPage => prevPage + 1);
 	}
 
 	const onClickPreviousPage = () => {
-		setPage(page - 1);
+		setPage(prevPage => prevPage - 1);
 	}
 
 	return(

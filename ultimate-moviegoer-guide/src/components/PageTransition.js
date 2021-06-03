@@ -29,7 +29,6 @@ const PageTransition = ({page, setPage, totalPages}) => {
 PageTransition.propTypes = {
 	page: PropTypes.number,
 	setPage: PropTypes.func,
-	totalPages: PropTypes.number,
 }
 
 export default PageTransition

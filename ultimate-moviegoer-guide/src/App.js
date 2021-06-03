@@ -45,9 +45,8 @@ function App() {
     // API documentation says we need 3 parts to retrieve the movie image. By fetching the 'configuration', we can grab the base_url and the file size of our choosing.
     // The 3rd piece is the movie file_path which we can grab within the movie data we already pulled. 
     const {images} = await fetchFromAPI('configuration?');
-
     // We can combine the 1st piece and 2nd piece to create a url to pass to the movie list.
-    setImageData(`${images.base_url}${images.poster_sizes[2]}`);
+    setImageData(`${images.secure_base_url}${images.poster_sizes[2]}`);
   }
 
 

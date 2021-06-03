@@ -12,7 +12,6 @@ const Search = ({setQuery, setPage}) => {
 
 	return(
 		<form>
-			<label>Search</label>
 			<input 
 			type='text' 
 			placeholder='Search for a movie...'

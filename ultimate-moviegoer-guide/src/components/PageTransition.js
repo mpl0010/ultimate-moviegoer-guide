@@ -23,8 +23,11 @@ const PageTransition = ({page, setPage, totalPages}) => {
 	)
 }
 
+// When we want to make sure the prop that is getting passed in is a certain type, we can use proptypes as a validator.
 PageTransition.propTypes = {
+	page: PropTypes.number,
 	setPage: PropTypes.func,
+	totalPages: PropTypes.number,
 }
 
 export default PageTransition

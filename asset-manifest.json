@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/ultimate-moviegoer-guide/static/css/main.8998b623.chunk.css",
-    "main.js": "/ultimate-moviegoer-guide/static/js/main.ad2d0db5.chunk.js",
-    "main.js.map": "/ultimate-moviegoer-guide/static/js/main.ad2d0db5.chunk.js.map",
-    "runtime-main.js": "/ultimate-moviegoer-guide/static/js/runtime-main.d884ea1d.js",
-    "runtime-main.js.map": "/ultimate-moviegoer-guide/static/js/runtime-main.d884ea1d.js.map",
-    "static/js/2.35d78709.chunk.js": "/ultimate-moviegoer-guide/static/js/2.35d78709.chunk.js",
-    "static/js/2.35d78709.chunk.js.map": "/ultimate-moviegoer-guide/static/js/2.35d78709.chunk.js.map",
-    "static/js/3.034f825d.chunk.js": "/ultimate-moviegoer-guide/static/js/3.034f825d.chunk.js",
-    "static/js/3.034f825d.chunk.js.map": "/ultimate-moviegoer-guide/static/js/3.034f825d.chunk.js.map",
+    "main.css": "/ultimate-moviegoer-guide/static/css/main.f8f3432c.chunk.css",
+    "main.js": "/ultimate-moviegoer-guide/static/js/main.c6a393e4.chunk.js",
+    "main.js.map": "/ultimate-moviegoer-guide/static/js/main.c6a393e4.chunk.js.map",
+    "runtime-main.js": "/ultimate-moviegoer-guide/static/js/runtime-main.993bf33d.js",
+    "runtime-main.js.map": "/ultimate-moviegoer-guide/static/js/runtime-main.993bf33d.js.map",
+    "static/js/2.f33463dd.chunk.js": "/ultimate-moviegoer-guide/static/js/2.f33463dd.chunk.js",
+    "static/js/2.f33463dd.chunk.js.map": "/ultimate-moviegoer-guide/static/js/2.f33463dd.chunk.js.map",
+    "static/js/3.94fc93bf.chunk.js": "/ultimate-moviegoer-guide/static/js/3.94fc93bf.chunk.js",
+    "static/js/3.94fc93bf.chunk.js.map": "/ultimate-moviegoer-guide/static/js/3.94fc93bf.chunk.js.map",
     "index.html": "/ultimate-moviegoer-guide/index.html",
-    "static/css/main.8998b623.chunk.css.map": "/ultimate-moviegoer-guide/static/css/main.8998b623.chunk.css.map",
-    "static/js/2.35d78709.chunk.js.LICENSE.txt": "/ultimate-moviegoer-guide/static/js/2.35d78709.chunk.js.LICENSE.txt"
+    "static/css/main.f8f3432c.chunk.css.map": "/ultimate-moviegoer-guide/static/css/main.f8f3432c.chunk.css.map",
+    "static/js/2.f33463dd.chunk.js.LICENSE.txt": "/ultimate-moviegoer-guide/static/js/2.f33463dd.chunk.js.LICENSE.txt",
+    "static/media/image.61add046.jpg": "/ultimate-moviegoer-guide/static/media/image.61add046.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d884ea1d.js",
-    "static/js/2.35d78709.chunk.js",
-    "static/css/main.8998b623.chunk.css",
-    "static/js/main.ad2d0db5.chunk.js"
+    "static/js/runtime-main.993bf33d.js",
+    "static/js/2.f33463dd.chunk.js",
+    "static/css/main.f8f3432c.chunk.css",
+    "static/js/main.c6a393e4.chunk.js"
   ]
 }

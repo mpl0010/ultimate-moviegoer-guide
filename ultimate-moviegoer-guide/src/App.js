@@ -12,6 +12,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [filter, setFilter] = useState('now_playing')
   const [query, setQuery] = useState('');
+  const [imageData, setImageData] = useState('');
 
   useEffect(() => {
     if (query) {
@@ -20,6 +21,7 @@ function App() {
     else {
       getMovieData(filter, page);
     }
+    getImageData();
   }, [page, filter, query])
 
   const getMovieData = async (filter, page) => {
@@ -39,12 +41,21 @@ function App() {
     setTotalPages(total_pages);
   }
 
+  const getImageData = async () => {
+    // API documentation says we need 3 parts to retrieve the movie image. By fetching the 'configuration', we can grab the base_url and the file size of our choosing.
+    // The 3rd piece is the movie file_path which we can grab within the movie data we already pulled. 
+    const {images} = await fetchFromAPI('configuration?');
+
+    // We can combine the 1st piece and 2nd piece to create a url to pass to the movie list.
+    setImageData(`${images.base_url}${images.poster_sizes[2]}`);
+  }
+
 
   return (
     <div className="container">
       <Header setQuery={setQuery} setPage={setPage}/>
       <FilterBar filter={filter} setFilter={setFilter} setPage={setPage}/>
-      <MovieList movies={movies}/>
+      <MovieList movies={movies} imageData={imageData}/>
       <PageTransition page={page} setPage={setPage} totalPages={totalPages}/>
     </div>
   );

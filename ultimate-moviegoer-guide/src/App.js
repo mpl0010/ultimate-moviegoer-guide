@@ -21,8 +21,12 @@ function App() {
     else {
       getMovieData(filter, page);
     }
-    getImageData();
   }, [page, filter, query])
+
+  // I want to use a separate useEffect for the imageData because I don't want to call getImageData everytime page, filter, or query is changed. I only want to call it when imageData is changed.
+  useEffect(() =>  {
+    getImageData();
+  }, [imageData])
 
   const getMovieData = async (filter, page) => {
     // We want to construct a url using the filter and page that is passed in.

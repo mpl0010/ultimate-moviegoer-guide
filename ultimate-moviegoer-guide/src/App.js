@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="container">
       <Header setQuery={setQuery} setPage={setPage}/>
-      <FilterBar filter={filter} setFilter={setFilter} setPage={setPage}/>
+      <FilterBar setFilter={setFilter} setPage={setPage} setQuery={setQuery}/>
       <MovieList movies={movies} imageData={imageData}/>
       <PageTransition page={page} setPage={setPage} totalPages={totalPages}/>
     </div>
